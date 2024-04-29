@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mahitha2712.github.io/Bookstore-react",
   "name": "frontend",
   "version": "0.1.0",
   "proxy": "http://127.0.0.1:5000",
@@ -24,10 +25,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
